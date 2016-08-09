@@ -28,13 +28,14 @@ extension NSDate {
     func xSeconds(date: NSDate,x:Int) -> NSDate
     { return NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Second, value: x, toDate: date, options: NSCalendarOptions())! }
     
+    
+    
     func dateToString(date:NSDate) -> String {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
         //dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
         return dateFormatter.stringFromDate(date)
     }
-    
     func stringToDate(dateMediumStyleString:String) -> NSDate {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
