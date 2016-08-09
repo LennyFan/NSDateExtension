@@ -34,6 +34,14 @@ extension NSDate {
         //dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
         return dateFormatter.stringFromDate(date)
     }
+    
+    func stringToDate(dateMediumStyleString:String) -> NSDate {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        return dateFormatter.dateFromString(string)!
+    }
+    
+    
     func GetDateTime(date:NSDate) -> String{
         let calendar = NSCalendar.currentCalendar()
         let comp = calendar.components([.Hour, .Minute], fromDate: date)
