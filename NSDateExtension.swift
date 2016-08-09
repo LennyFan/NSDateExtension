@@ -1,10 +1,8 @@
 //
 //  NSDateExtension.swift
-//  CalFinalTest
 //
 //  Created by Lenny on 6/28/16.
-//  Copyright © 2016 Grapefrut. All rights reserved.
-//
+// 
 
 import Foundation
 import EventKit
